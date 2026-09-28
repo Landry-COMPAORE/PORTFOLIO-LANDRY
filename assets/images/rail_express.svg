@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#091322"/>
+      <stop offset="60%" stop-color="#152844"/>
+      <stop offset="100%" stop-color="#1f3b64"/>
+    </linearGradient>
+    <linearGradient id="canopyGrad" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="trainGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="80%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="concreteViaduct" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56, 189, 248, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Sky & Technical Grid -->
+  <rect width="1200" height="675" fill="url(#skyGrad)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+
+  <!-- City Skyline silhouettes in background -->
+  <g opacity="0.35">
+    <rect x="50" y="240" width="80" height="240" fill="#0f1f38"/>
+    <rect x="150" y="190" width="110" height="290" fill="#0b172b"/>
+    <rect x="280" y="220" width="95" height="260" fill="#0f1f38"/>
+    <rect x="850" y="160" width="120" height="320" fill="#0b172b"/>
+    <rect x="990" y="200" width="140" height="280" fill="#132746"/>
+  </g>
+
+  <!-- Technical Axis and Elevation Lines -->
+  <g stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4">
+    <line x1="0" y1="460" x2="1200" y2="460"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <text x="30" y="450" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">AXE VOIE +18.500m</text>
+    <text x="30" y="350" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">VOÛTE VERRIÈRE +28.000m</text>
+  </g>
+
+  <!-- Curved Multimodal Hub Futuristic Canopy (Tensile Membrane / Glass) -->
+  <path d="M -50 380 Q 250 180 600 240 T 1250 360 L 1250 420 Q 800 290 600 280 T -50 440 Z" fill="url(#canopyGrad)" stroke="#38bdf8" stroke-width="2"/>
+  
+  <!-- Canopy Truss Struts -->
+  <g stroke="rgba(255,255,255,0.4)" stroke-width="2">
+    <line x1="180" y1="280" x2="220" y2="460"/>
+    <line x1="320" y1="230" x2="360" y2="460"/>
+    <line x1="480" y1="235" x2="510" y2="460"/>
+    <line x1="640" y1="250" x2="660" y2="460"/>
+    <line x1="800" y1="285" x2="810" y2="460"/>
+    <line x1="960" y1="325" x2="960" y2="460"/>
+  </g>
+
+  <!-- Viaduct Concrete Piers -->
+  <g fill="url(#concreteViaduct)">
+    <polygon points="190,460 210,460 220,620 180,620"/>
+    <polygon points="490,460 510,460 520,620 480,620"/>
+    <polygon points="790,460 810,460 820,620 780,620"/>
+    <polygon points="1070,460 1090,460 1100,620 1060,620"/>
+  </g>
+
+  <!-- Viaduct Deck (Box Girder Pre-stressed Concrete) -->
+  <path d="M -50 440 L 1250 440 L 1250 470 L -50 470 Z" fill="#475569" stroke="#64748b" stroke-width="2"/>
+  <rect x="-50" y="435" width="1300" height="8" fill="#f59e0b"/>
+
+  <!-- High-Speed Aerodynamic Train on Viaduct -->
+  <g>
+    <!-- Train Body -->
+    <path d="M 350 435 L 750 435 L 850 435 Q 920 435 950 420 Q 980 400 1020 428 L 1020 435 L 350 435 Z" fill="url(#trainGrad)"/>
+    <path d="M 400 395 L 880 395 Q 940 395 990 420 L 1020 428 L 940 428 L 400 428 Z" fill="#f8fafc" opacity="0.95"/>
+    <path d="M 420 405 L 870 405 L 940 422 L 420 422 Z" fill="#0f172a"/>
+    <!-- Train Window Stripe -->
+    <g fill="#38bdf8" opacity="0.8">
+      <rect x="440" y="408" width="50" height="10" rx="2"/>
+      <rect x="500" y="408" width="50" height="10" rx="2"/>
+      <rect x="560" y="408" width="50" height="10" rx="2"/>
+      <rect x="620" y="408" width="50" height="10" rx="2"/>
+      <rect x="680" y="408" width="50" height="10" rx="2"/>
+      <rect x="740" y="408" width="50" height="10" rx="2"/>
+      <rect x="800" y="408" width="50" height="10" rx="2"/>
+    </g>
+    <!-- Speed Motion Trails -->
+    <line x1="200" y1="412" x2="380" y2="412" stroke="#f59e0b" stroke-width="2" stroke-dasharray="20,10" opacity="0.8"/>
+    <line x1="150" y1="422" x2="350" y2="422" stroke="#38bdf8" stroke-width="3" stroke-dasharray="30,15" opacity="0.8"/>
+  </g>
+
+  <!-- Technical Overlay Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="280" height="75" rx="8" fill="#0f172a" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="16">LIGNE EXPRESS TGV & HUB</text>
+    <text x="20" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">140 M€ • INFRASTRUCTURE FERROVIAIRE</text>
+  </g>
+</svg>

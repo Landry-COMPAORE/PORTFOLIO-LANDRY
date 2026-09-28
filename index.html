@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landry COMPAORE | Ingénieur de Conception en Génie Civil (2iE)</title>
+  <meta name="description"
+    content="Portfolio professionnel de Dakiswendé P. Jean Landry COMPAORE, Ingénieur de conception en génie civil (2iE). Pilotage d'études de structure, calcul béton armé & métal, déboursés secs et qualité ISO 9001.">
+  <meta name="author" content="Dakiswendé P. Jean Landry COMPAORE">
+  <meta name="theme-color" content="#0b121e">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Landry COMPAORE | Ingénieur de Conception en Génie Civil">
+  <meta property="og:description"
+    content="Découvrez les réalisations majeures en génie civil, études de structures et suivi-contrôle de chantier de Landry COMPAORE.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero_tower.jpg">
+
+  <!-- Polices Google Fonts (Cormorant Garamond & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       1. NAVIGATION HEADER (STYLE MAKEIT - FOND SOMBRE & BOUTON ORANGE)
+       ==================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-brand" aria-label="Accueil - Landry COMPAORE">
+        Landry<span class="brand-accent">COMPAORE</span>
+      </a>
+
+      <!-- Menu Principal -->
+      <nav aria-label="Navigation principale">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link">Accueil</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projets" class="nav-link">Réalisations</a></li>
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#diplomes" class="nav-link">Diplômes</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Contact -->
+      <div class="header-cta">
+        <a href="#contact" class="btn-accent">Me contacter</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         2. HERO SECTION (DEUX COLONNES - TEXTE SERIF & GRANDE TOUR ARCHITECTURALE)
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Col Gauche : Titre & Accroche -->
+          <div class="hero-left">
+            <div class="hero-tag">
+              <span>•</span> INGÉNIEUR DE CONCEPTION EN GÉNIE CIVIL
+            </div>
+
+            <h1 class="serif-title hero-title">
+              Bâtir l'avenir et donner <span class="highlight-word">forme</span> à vos <span
+                class="highlight-word">ouvrages</span>
+            </h1>
+
+            <p class="hero-lead">
+              Ingénieur diplômé de <strong>2iE</strong> fort de <strong>5 années d'expertise</strong> entre pilotage
+              d'études de structures (béton armé & charpentes métalliques), suivi-contrôle rigoureux sur le terrain et
+              démarche qualité ISO 9001. De l'analyse des dossiers d'exécution à la réception des travaux, je garantis
+              la qualité des ouvrages, la maîtrise des budgets et le respect des délais.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#services" class="btn-accent">Mes services</a>
+              <button class="btn-dark btn-download-cv" id="heroCvBtn">Consulter mon CV</button>
+            </div>
+
+            <!-- Mini Stats Comptées -->
+            <div class="hero-stats-mini" id="heroStats">
+              <div>
+                <div class="mini-stat-val">5 <span>Ans</span></div>
+                <div class="mini-stat-label">Expérience Études & Terrain</div>
+              </div>
+              <div>
+                <div class="mini-stat-val">10+ <span>Projets</span></div>
+                <div class="mini-stat-label">Infrastructures dimensionnées</div>
+              </div>
+              <div>
+                <div class="mini-stat-val">100% <span>Qualité</span></div>
+                <div class="mini-stat-label">Démarche ISO 9001 Appliquée</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col Droite : Tour Architecturale Moderne -->
+          <div class="hero-right">
+            <div class="hero-img-wrap">
+              <img src="assets/images/hero_tower.jpg" alt="Tour architecturale moderne" class="hero-img">
+              <div class="hero-img-badge">
+                <div class="badge-title">COMPAORE Dakiswendé P. Jean Landry</div>
+                <div class="badge-sub">Diplômé 2iE • Ingénieur Génie Civil</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. SECTION SERVICES (MY SERVICES - 4 CARTES NUMÉROTÉES AVEC VIGNETTES)
+         ==================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-head-center">
+          <h2 class="serif-title section-title-serif">
+            Mes <span class="highlight-word">services</span>
+          </h2>
+          <p style="color: var(--color-text-muted); max-width: 580px; margin: 0.5rem auto 0;">
+            Une approche globale de l'ingénierie civile, de la modélisation structurale aux études économiques et au
+            contrôle de conformité.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Carte 01 -->
+          <article class="service-card">
+            <div>
+              <div class="service-num">01</div>
+              <h3 class="service-title">Calcul & Dimensionnement</h3>
+              <div class="service-img-thumb">
+                <img src="assets/images/Calcul de structure.jpeg" alt="Calcul de structure" loading="lazy">
+              </div>
+              <p class="service-desc">
+                Dimensionnement rigoureux des structures en béton armé et charpentes métalliques sous Robot Structural
+                Analysis et CypeCAD.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#projets" class="service-arrow-btn" aria-label="En savoir plus sur le calcul">→</a>
+            </div>
+          </article>
+
+          <!-- Carte 02 -->
+          <article class="service-card">
+            <div>
+              <div class="service-num">02</div>
+              <h3 class="service-title">Déboursés secs & Budgetisation des projets</h3>
+              <div class="service-img-thumb">
+                <img src="assets/images/Budget.jpeg" alt="Études de prix" loading="lazy">
+              </div>
+              <p class="service-desc">
+                Établissement des déboursés secs analytiques, métrés détaillés et budgétisation rigoureuse pour garantir
+                la rentabilité des chantiers.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#projets" class="service-arrow-btn" aria-label="En savoir plus sur les études de prix">→</a>
+            </div>
+          </article>
+
+          <!-- Carte 03 -->
+          <article class="service-card">
+            <div>
+              <div class="service-num">03</div>
+              <h3 class="service-title">Suivi-Contrôle de Chantier</h3>
+              <div class="service-img-thumb">
+                <img src="assets/images/Controle.jpeg" alt="Suivi de chantier" loading="lazy">
+              </div>
+              <p class="service-desc">
+                Contrôle technique rigoureux d'exécution (terrassement, gros œuvre, second œuvre), conformité aux plans
+                et réception des travaux.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#projets" class="service-arrow-btn" aria-label="En savoir plus sur le suivi-contrôle">→</a>
+            </div>
+          </article>
+
+          <!-- Carte 04 -->
+          <article class="service-card">
+            <div>
+              <div class="service-num">04</div>
+              <h3 class="service-title">Qualité SMQ ISO 9001</h3>
+              <div class="service-img-thumb">
+                <img src="assets/images/ISO-9001-7-principles.jpg" alt="Démarche qualité ISO 9001" loading="lazy">
+              </div>
+              <p class="service-desc">
+                Pilotage du système de management de la qualité.
+              </p>
+            </div>
+            <div class="service-footer">
+              <a href="#projets" class="service-arrow-btn" aria-label="En savoir plus sur la qualité">→</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-btn-wrap">
+          <a href="#projets" class="btn-accent">Découvrir mes réalisations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. SECTION ABOUT ME (COMPOSITION ASYMÉTRIQUE AVEC PHOTO SUR FOND DÉCALÉ)
+         ==================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Col Gauche : Texte de présentation -->
+          <div class="about-left">
+            <h2 class="serif-title section-title-serif">
+              À propos de <span class="highlight-word">moi</span>
+            </h2>
+
+            <div class="about-greeting">
+              Bonjour ! Je suis <br><strong>Landry COMPAORE</strong>
+            </div>
+
+            <p class="about-lead">
+              Ingénieur Génie Civil fort de 5 années d'expertise entre pilotage d'études de structure, suivi-contrôle
+              sur le terrain et démarche qualité ISO 9001. De l'analyse des dossiers d'exécution à la réception des
+              travaux, je garantis la qualité des ouvrages, la maîtrise des budgets et le respect des délais.
+            </p>
+
+            <div class="about-pills">
+              <div class="about-pill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Diplômé de l'Institut International d'Ingénierie de l'Eau et de l'Environnement (2iE)</span>
+              </div>
+              <div class="about-pill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Chef de Service Étude chez Entreprise de Construction Woumtaba (ECW) Sarl</span>
+              </div>
+              <div class="about-pill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Ouagadougou, Burkina Faso (Mobilité sous-régionale & internationale)</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn-dark">Me contacter</a>
+              <a href="#projets" class="btn-accent">Voir mes réalisations</a>
+            </div>
+          </div>
+
+          <!-- Col Droite : Photo Ingénieur sur Encart Marine Décalé -->
+          <div class="about-right">
+            <div class="about-backdrop-card"></div>
+            <div class="about-img-box">
+              <img src="assets/images/INGENIEUR.jpeg" alt="Ingénieur en génie civil au travail" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. SECTION MY PROJECTS (MY PROJECTS - CARTES ÉPURÉES AVEC FLÈCHE ↗)
+         ==================================================================== -->
+    <section class="projects-section" id="projets">
+      <div class="container">
+        <div class="projects-header-flex">
+          <div>
+            <h2 class="serif-title section-title-serif">
+              Mes <span class="highlight-word">réalisations</span>
+            </h2>
+            <p style="color: var(--color-text-muted); margin-top: 0.35rem;">
+              Une sélection d'infrastructures dimensionnées avec rigueur technique.
+            </p>
+          </div>
+
+          <!-- Filtres par catégories -->
+          <div class="projects-filter-bar" role="tablist">
+            <button class="p-filter-btn active" data-filter="all">Tous (10)</button>
+          </div>
+        </div>
+
+        <!-- Grille dynamique des projets gérée par main.js -->
+        <div class="projects-grid-makeit" id="projectsGrid">
+          <!-- Injecté dynamiquement par main.js -->
+        </div>
+
+        <div class="center-btn-wrap">
+          <button class="btn-accent btn-download-cv">Consulter le dossier complet</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. SECTION DIPLÔMES & QUALIFICATIONS (ORDRE DÉCROISSANT 2025 -> 2016)
+         ==================================================================== -->
+    <section class="qualifications-section" id="diplomes">
+      <div class="container">
+        <div class="section-head-center">
+          <h2 class="serif-title section-title-serif">
+            Diplômes & <span class="highlight-word">qualifications</span>
+          </h2>
+          <p style="color: var(--color-text-muted); margin-top: 0.35rem;">
+            Un cursus académique d'excellence classé par ordre chronologique décroissant (2025 à 2016).
+          </p>
+        </div>
+
+        <div class="quals-grid">
+          <!-- 1. 2025 -->
+          <div class="qual-card">
+            <div>
+              <div class="qual-year">2025</div>
+              <h3 class="qual-title">Certification TOEIC d'Anglais Professionnel</h3>
+              <p class="qual-inst">2iE Ouagadougou (Score officiel : 640/990 – Décembre 2025)</p>
+            </div>
+            <span class="qual-badge">Anglais Professionnel</span>
+          </div>
+
+          <!-- 2. 2023 -->
+          <div class="qual-card">
+            <div>
+              <div class="qual-year">2023</div>
+              <h3 class="qual-title">Formation Entrepreneur Responsable (10e Édition)</h3>
+              <p class="qual-inst">2iE - Institut International d'Ingénierie de l'Eau et de l'Environnement</p>
+            </div>
+            <span class="qual-badge">Gestion & Leadership</span>
+          </div>
+
+          <!-- 3. 2019 - 2022 -->
+          <div class="qual-card">
+            <div>
+              <div class="qual-year">2019 - 2022</div>
+              <h3 class="qual-title">Master II en Génie Civil / Bâtiments & Travaux Publics</h3>
+              <p class="qual-inst">2iE - Institut International d'Ingénierie de l'Eau et de l'Environnement
+                (Ouagadougou)</p>
+            </div>
+            <span class="qual-badge">Diplôme d'Ingénieur (Grade Master)</span>
+          </div>
+
+          <!-- 4. 2016 - 2019 -->
+          <div class="qual-card">
+            <div>
+              <div class="qual-year">2016 - 2019</div>
+              <h3 class="qual-title">Licence en Génie Civil</h3>
+              <p class="qual-inst">VERECHAGUINE AK à Cotonou au Bénin</p>
+            </div>
+            <span class="qual-badge">Grade Licence BTP</span>
+          </div>
+
+          <!-- 5. 2016 - 2018 -->
+          <div class="qual-card">
+            <div>
+              <div class="qual-year">2016 - 2018</div>
+              <h3 class="qual-title">Brevet de Technicien Supérieur (BTS) en Génie Civil</h3>
+              <p class="qual-inst">VERECHAGUINE AK à Cotonou au Bénin</p>
+            </div>
+            <span class="qual-badge">BTS Bâtiment & TP</span>
+          </div>
+
+          <!-- 6. 2016 -->
+          <div class="qual-card">
+            <div>
+              <div class="qual-year">2016</div>
+              <h3 class="qual-title">Permis de Conduire Catégories C</h3>
+              <p class="qual-inst">Délivrance Officielle (Poids Lourds & Véhicules de Chantier)</p>
+            </div>
+            <span class="qual-badge">Mobilité Totale Terrain</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       7. FOOTER SOMBRE AVEC CALEPIN PERFORÉ (TELL US ABOUT YOU) & TITRE GÉANT
+       ==================================================================== -->
+  <footer class="site-footer-makeit" id="contact">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Gauche : Carte Calepin / Bloc-Notes Papier Perforé -->
+        <div class="notebook-card">
+          <h3 class="notebook-title">Parlez-moi de votre projet</h3>
+          <p class="notebook-sub">Discutons de vos besoins ou d'une future opportunité</p>
+
+          <form id="contactForm" class="notebook-form">
+            <div class="notebook-field">
+              <input type="text" id="contactName" class="notebook-input" placeholder="Nom / Entreprise *" required>
+            </div>
+            <div class="notebook-field">
+              <input type="email" id="contactEmail" class="notebook-input" placeholder="Adresse Email *" required>
+            </div>
+            <div class="notebook-field">
+              <input type="text" id="contactPhone" class="notebook-input" placeholder="Téléphone / WhatsApp">
+            </div>
+            <div class="notebook-field">
+              <textarea id="contactMessage" class="notebook-input" rows="2"
+                placeholder="Votre message / Détails du projet *" style="resize: none;" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-accent notebook-btn" id="contactSubmitBtn">
+              Envoyer le message
+            </button>
+
+            <div id="contactFeedback" style="margin-top: 0.5rem; font-size: 0.85rem;"></div>
+          </form>
+        </div>
+
+        <!-- Droite : 4 Colonnes d'Informations -->
+        <div class="footer-cols-grid">
+          <div>
+            <h4 class="f-col-title">Contact</h4>
+            <p class="f-info-text">
+              <a href="mailto:Landrycompaore43@gmail.com"
+                style="color: #cbd5e1; text-decoration: none;">Landrycompaore43@gmail.com</a><br>
+              <span style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.82rem;">+226 79 12 38
+                18</span><br>
+              <span style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.82rem;">+226 75 35 88
+                32</span><br>
+              Ouagadougou, Burkina Faso
+            </p>
+            <div class="f-social-icons">
+              <a href="www.linkedin.com/in/landry-compaore-a17189254" target="_blank" rel="noopener"
+                class="f-social-btn" title="LinkedIn">in</a>
+              <button class="f-social-btn btn-download-cv" title="Télécharger CV"
+                style="border:none; cursor:pointer;">cv</button>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="f-col-title">Services</h4>
+            <ul class="f-links-list">
+              <li><a href="#services">Calcul Structures en Béton Armé</a></li>
+              <li><a href="#services">Calcul Sructures Métalliques</a></li>
+              <li><a href="#services">Déboursés Secs & Bugétisation</a></li>
+              <li><a href="#services">Suivi & Contrôle de Chantier</a></li>
+              <li><a href="#services">Démarche Qualité ISO 9001</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="f-col-title">À propos</h4>
+            <p class="f-info-text">
+              Ingénieur de conception en génie civil diplômé de 2iE. Conception technique et pilotage d'études au
+              service d'infrastructures durables et de qualité certifiée.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="f-col-title">Liens rapides</h4>
+            <ul class="f-links-list">
+              <li><a href="#hero">Accueil</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projets">Réalisations</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#diplomes">Diplômes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lettrage Monumental BÂTIR L'AVENIR -->
+      <div class="footer-giant-brand">
+        <div class="giant-text">
+          BÂTIR <span>L'AVENIR</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 COMPAORE Dakiswendé P. Jean Landry - Ingénieur en Génie Civil.</div>
+        <div>Conçu avec rigueur & Professionalisme.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       8. MODALE DE DÉTAIL D'UN PROJET (HAUTE DÉFINITION)
+       ==================================================================== -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Fermer la fiche technique">✕</button>
+      <div id="modalDetails">
+        <!-- Rempli dynamiquement par main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       9. MODALE DU DOSSIER CV (CONSULTABLE & IMPRIMABLE FORMAT OFFICIEL)
+       ==================================================================== -->
+  <div class="modal" id="cvModal" role="dialog" aria-modal="true" aria-label="Dossier CV Professionnel">
+    <div class="modal-backdrop" onclick="closeCvModal()"></div>
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeCvModal()" aria-label="Fermer le CV">✕</button>
+
+      <!-- Barre d'action d'impression -->
+      <div class="cv-action-bar">
+        <span style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600;">
+          DOSSIER CV OFFICIEL • COMPAORE DAKISWENDÉ P. JEAN LANDRY
+        </span>
+        <button class="btn-accent" onclick="printCv()" style="padding: 0.45rem 1rem; font-size: 0.82rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9" />
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <rect x="6" y="14" width="12" height="8" />
+          </svg>
+          Imprimer / Enregistrer en PDF
+        </button>
+      </div>
+
+      <!-- Corps du CV au format clair et officiel -->
+      <div class="cv-printable-body">
+        <div class="cv-print-header">
+          <div>
+            <h2 class="cv-name">COMPAORE Dakiswendé P. Jean Landry</h2>
+            <div class="cv-subtitle">Ingénieur de conception en génie civil – 05 ans d’expérience</div>
+            <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">
+              Diplômé de 2iE • Calcul de Structures • Déboursé Sec • Démarche Qualité ISO 9001 • Suivi de Chantier
+            </p>
+          </div>
+          <div style="font-size: 0.85rem; text-align: right; color: #475569;">
+            <div><strong>Tél :</strong> +226 79 12 38 18 / 75 35 88 32</div>
+            <div><strong>Email :</strong> Landrycompaore43@gmail.com</div>
+            <div><strong>Localisation :</strong> Ouagadougou, Burkina Faso</div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="cv-section-title">À propos de moi</h3>
+          <p style="font-size: 0.88rem; color: #334155; line-height: 1.6;">
+            Ingénieur Génie Civil fort de 5 années d'expertise entre pilotage d'études de structure, suivi-contrôle sur
+            le terrain et démarche qualité ISO 9001. De l'analyse des dossiers d'exécution à la réception des travaux,
+            je garantis la qualité des ouvrages, la maîtrise des budgets et le respect des délais. Fiable, doté d'une
+            forte culture de la qualité et de la sécurité, je mets mon autonomie et mon sens du résultat au service de
+            votre entreprise pour le pilotage de projets structurants.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="cv-section-title">Expériences Professionnelles</h3>
+
+          <div style="margin-bottom: 1rem;">
+            <strong style="color: var(--color-dark);">Chef de Service Étude | Entreprise de Construction Woumtaba (ECW)
+              Sarl</strong>
+            <span style="float: right; color: var(--color-accent); font-weight: 600;">Depuis Mai 2025</span>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.25rem;">
+              • Pilotage du système de management de la qualité (SMQ) et reporting stratégique des activités de la
+              section étude ;<br>
+              • Élaboration du déboursé sec, des plans d’exécution et budgétisation du projet de <strong>Construction de
+                25 Centres de Santé (PRSS-ASN)</strong> pour le Ministère de la Santé ;<br>
+              • Élaboration du déboursé sec et budgétisation du projet de <strong>Renforcement de la sécurisation des
+                postes douaniers</strong> ;<br>
+              • Conception, dimensionnement, suivi et contrôle d'un bâtiment R+2 en structure métallique avec
+              cloisonnement en parpaing ;<br>
+              • Dimensionnement d’un amphithéâtre de 350 places et aménagement de piste rurale à Koudougou.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <strong style="color: var(--color-dark);">Responsable Section Béton & Étude de Prix | ECW Sarl</strong>
+            <span style="float: right; color: var(--color-accent); font-weight: 600;">Janv. 2025 – Avr. 2025</span>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.25rem;">
+              • Métré de l’immeuble de bureaux R+2 pour le nouveau bureau pays du <strong>Programme Alimentaire Mondial
+                (PAM)</strong> ;<br>
+              • Métré d'un bâtiment R+4 avec sous-sol et édicule ;<br>
+              • APD pour la Banque Nationale de Gènes Phylogénétiques et étude de prix d'une centrale thermique ;<br>
+              • Suivi et contrôle des travaux de réhabilitation du monument des héros nationaux à Ouagadougou.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <strong style="color: var(--color-dark);">Assistant du Directeur | Bureau d’Ingénierie International (BEI)
+              Sarl</strong>
+            <span style="float: right; color: var(--color-accent); font-weight: 600;">Mai 2024 – Déc. 2024</span>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.25rem;">
+              • Suivi et contrôle technique des travaux de construction pour garantir la conformité aux plans ;<br>
+              • Expertise technique, notes de calcul de structures et dimensionnement bâtiment R+2 à Kouba.
+            </p>
+          </div>
+
+          <div>
+            <strong style="color: var(--color-dark);">Ingénieur Génie Civil | Entreprise ADVEO SA</strong>
+            <span style="float: right; color: var(--color-accent); font-weight: 600;">Sept. 2022 – Nov. 2023</span>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.25rem;">
+              • Montage de dossiers d'appels d'offres (DAO) et de dossiers d'agrément technique ;<br>
+              • Suivi-contrôle des travaux et établissement des devis quantitatifs et estimatifs.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="cv-section-title">Formations, Diplômes & Outils</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; font-size: 0.85rem; color: #334155;">
+            <div>
+              <strong style="color: #0f172a;">Cursus Académique (Ordre décroissant) :</strong>
+              <ul style="padding-left: 1.2rem; margin-top: 0.35rem; line-height: 1.6;">
+                <li><strong>2025 :</strong> TOEIC Anglais - Score 640/990 (2iE)</li>
+                <li><strong>2023 :</strong> Formation Entrepreneur Responsable (2iE)</li>
+                <li><strong>2019-2022 :</strong> Master II en Génie Civil / BTP (2iE)</li>
+                <li><strong>2016-2019 :</strong> Licence en Génie Civil (VERECHAGUINE AK)</li>
+                <li><strong>2016-2018 :</strong> BTS en Génie Civil (VERECHAGUINE AK)</li>
+                <li><strong>2016 :</strong> Permis de conduire catégories C</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong style="color: #0f172a;">Logiciels Maîtrisés :</strong>
+              <p style="margin-top: 0.35rem; line-height: 1.6;">
+                AutoCAD, ArchiCAD, ROBOT Structural Analysis, CypeCAD, Arche Ossature, Covadis, Alize LCPC, MS Project,
+                Microsoft Office.
+              </p>
+
+              <strong style="color: #0f172a; display: block; margin-top: 0.75rem;">Langues :</strong>
+              <p style="line-height: 1.6;">
+                • Français : Parfait<br>
+                • Anglais : Intermédiaire (Score TOEIC : 640/990 – 2iE)<br>
+                • Mooré : Parfait
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

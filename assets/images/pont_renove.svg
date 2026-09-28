@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bridgeSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="masonryGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="carbonFiber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="riverWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+    <pattern id="bridgeGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(245, 158, 11, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Sky & Engineering Blueprint Grid -->
+  <rect width="1200" height="675" fill="url(#bridgeSky)"/>
+  <rect width="1200" height="675" fill="url(#bridgeGrid)"/>
+
+  <!-- Historic Arch Bridge Structure (Stone Masonry / Historic Silhouette) -->
+  <!-- Main Road Deck -->
+  <rect x="0" y="270" width="1200" height="50" fill="url(#masonryGrad)"/>
+  <rect x="0" y="260" width="1200" height="10" fill="#475569"/>
+  <!-- Railing / Parapet stone -->
+  <g fill="#94a3b8">
+    <rect x="0" y="235" width="1200" height="25"/>
+    <!-- Parapet balusters -->
+    <line x1="0" y1="247" x2="1200" y2="247" stroke="#334155" stroke-width="3" stroke-dasharray="10,10"/>
+  </g>
+
+  <!-- Massive Masonry Arches -->
+  <!-- Left Pier & Arch -->
+  <path d="M 0 320 L 150 320 C 200 480, 400 480, 450 320 L 550 320 C 600 480, 800 480, 850 320 L 950 320 C 1000 480, 1200 480, 1200 320 L 1200 550 L 0 550 Z" fill="url(#masonryGrad)"/>
+  <!-- Arch Openings cut out into dark / water -->
+  <path d="M 150 550 L 150 350 C 200 460, 400 460, 450 350 L 450 550 Z" fill="#0b1320"/>
+  <path d="M 550 550 L 550 350 C 600 460, 800 460, 850 350 L 850 550 Z" fill="#0b1320"/>
+  <path d="M 950 550 L 950 350 C 1000 460, 1200 460, 1200 350 L 1200 550 Z" fill="#0b1320"/>
+
+  <!-- River Water -->
+  <rect x="0" y="520" width="1200" height="155" fill="url(#riverWater)"/>
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#5eead4" stroke-width="2" opacity="0.6"/>
+
+  <!-- ENGINEERING RETROFIT HIGHLIGHTS (CFRP & HYDRAULIC JACKS) -->
+  <!-- Intrados Carbon Fiber Reinforcement Bands (High-Tech Cyan glowing strips) -->
+  <path d="M 155 355 C 203 465, 397 465, 445 355" fill="none" stroke="url(#carbonFiber)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 555 355 C 603 465, 797 465, 845 355" fill="none" stroke="url(#carbonFiber)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 955 355 C 1003 465, 1195 465, 1200 355" fill="none" stroke="url(#carbonFiber)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Structural Tie Rods & Pre-stressing Cables -->
+  <g stroke="#f59e0b" stroke-width="3" stroke-dasharray="8,4">
+    <line x1="50" y1="310" x2="1150" y2="310"/>
+    <line x1="150" y1="360" x2="450" y2="360"/>
+    <line x1="550" y1="360" x2="850" y2="360"/>
+  </g>
+
+  <!-- Hydraulic Jacking Points / Vérins hydrauliques (Safety Orange) -->
+  <g fill="#f59e0b" stroke="#fff" stroke-width="2">
+    <!-- Jack at Pier 1 -->
+    <rect x="135" y="325" width="25" height="18" rx="2"/>
+    <rect x="440" y="325" width="25" height="18" rx="2"/>
+    <!-- Jack at Pier 2 -->
+    <rect x="535" y="325" width="25" height="18" rx="2"/>
+    <rect x="840" y="325" width="25" height="18" rx="2"/>
+  </g>
+
+  <!-- Engineering Sensors / Capteurs extensométriques (Optical strain sensors) -->
+  <circle cx="300" cy="425" r="8" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+  <circle cx="700" cy="425" r="8" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+  <line x1="300" y1="425" x2="300" y2="490" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="315" y="485" fill="#fca5a5" font-family="'JetBrains Mono', monospace" font-size="12">CAPTEUR FIBRE OPTIQUE</text>
+
+  <!-- Technical Callout Box -->
+  <g transform="translate(680, 50)">
+    <rect width="480" height="135" rx="8" fill="#0b1320" fill-opacity="0.9" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="16">RÉHABILITATION STRUCTURALE DU PONT</text>
+    <text x="20" y="55" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="12">RENFORT CARBONE (CFRP) & VÉRINAGE CONTRÔLÉ</text>
+    <line x1="20" y1="70" x2="460" y2="70" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="95" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Augmentation de capacité portante : +45% (Convoi 44t)</text>
+    <text x="20" y="118" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Préservation du patrimoine historique sans interruption fluviale</text>
+  </g>
+
+  <!-- Technical Overlay Badge Bottom Left -->
+  <g transform="translate(40, 40)">
+    <rect width="310" height="75" rx="8" fill="#0f172a" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="16">GÉNIE CIVIL & PATRIMOINE</text>
+    <text x="20" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">22 M€ • EUROCODES 1, 2 & 8</text>
+  </g>
+</svg>
